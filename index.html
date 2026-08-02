@@ -23,8 +23,60 @@
     <meta property="og:description" content="Fagleg feilsøking av AdBlue-, SCR- og NOx-system på bil, bobil, lastebil, traktor og maskiner." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://adbluehjelp.no/" />
-    <meta property="og:image" content="https://adbluehjelp.no/img/hero-bilde.png" />
+    <meta property="og:image" content="https://adbluehjelp.no/img/hero-bilde.jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": [
+          "AutoRepair",
+          "ProfessionalService"
+        ],
+        "name": "AdBluehjelp.no – Tuningservice Vest",
+        "url": "https://adbluehjelp.no/",
+        "image": "https://adbluehjelp.no/img/hero-bilde.jpg",
+        "description": "Diagnose og feilsøking av AdBlue-, SCR- og NOx-system på bil, bobil, varebil, lastebil, traktor og maskiner. Levert av Tuningservice Vest.",
+        "telephone": "+4794809710",
+        "email": "vest@tuningservice.no",
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Bjørnafjorden"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Osøyro"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Bergen"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Straume"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Øygarden"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Vestland"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Vestland",
+          "addressCountry": "NO"
+        },
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Tuningservice Vest",
+          "url": "https://tuningservicevest.no/"
+        }
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -76,9 +128,11 @@
           </p>
         </div>
         <img
-          src="img/hero-bilde.png"
+          src="img/hero-bilde.jpg"
           alt="Teknikar diagnostiserer ein bobil parkert ved ein fjord med opna panser"
           class="hero-img"
+          width="1600"
+          height="900"
         />
       </section>
 
@@ -269,9 +323,12 @@
       <section class="section work-image">
         <div class="container image-section">
           <img
-            src="img/feilsoking-bilde-tekniker.png"
+            src="img/feilsoking-bilde-tekniker.jpg"
             alt="Teknikar brukar ein robust diagnoselaptop til å feilsøke ein dieselmotor"
             class="responsive-image"
+            width="1400"
+            height="1050"
+            loading="lazy"
           />
         </div>
       </section>
@@ -335,20 +392,29 @@
           <div class="machinery-grid">
             <div class="machinery-item">
               <img
-                src="img/lastebil-bilde.png"
+                src="img/lastebil-bilde.jpg"
                 alt="Teknikar med laptop ved ein lastebil med opna førarhus og servicebil i bakgrunnen"
+                width="900"
+                height="507"
+                loading="lazy"
               />
             </div>
             <div class="machinery-item">
               <img
-                src="img/gravemaskin-bilde.png"
+                src="img/gravemaskin-bilde.jpg"
                 alt="Teknikar med laptop koplar til ein gravemaskin på ein byggjeplass ved fjorden"
+                width="900"
+                height="507"
+                loading="lazy"
               />
             </div>
             <div class="machinery-item">
               <img
-                src="img/traktor-bilde.png"
+                src="img/traktor-bilde.jpg"
                 alt="Teknikar brukar diagnoselaptop ved ein moderne traktor på ein rural veg med fjell i bakgrunnen"
+                width="900"
+                height="507"
+                loading="lazy"
               />
             </div>
           </div>
@@ -360,8 +426,11 @@
         <div class="container technical-grid">
           <div class="technical-item">
             <img
-              src="img/adblue-krystallisering.png"
+              src="img/adblue-krystallisering.jpg"
               alt="Nærbilde av hanske og lommelykt som inspiserer krystallisert AdBlue rundt eit lokk"
+              width="900"
+              height="675"
+              loading="lazy"
             />
             <h3>AdBlue‑krystallisering</h3>
             <p>
@@ -372,8 +441,11 @@
           </div>
           <div class="technical-item">
             <img
-              src="img/nox-sensor-bilde.png"
+              src="img/nox-sensor-bilde.jpg"
               alt="Hanskar som inspiserer ein NOx‑sensor og eksosanlegg for kabel og sensorfeil"
+              width="900"
+              height="675"
+              loading="lazy"
             />
             <h3>NOx‑sensorar og eksosanlegg</h3>
             <p>
@@ -504,6 +576,7 @@
             >
           </div><div class="contact-form">
             <h3>Eller send skjema</h3>
+            <p style="font-size:0.85rem;opacity:0.85;margin:0 0 12px;">Send gjerne registreringsnummer, modell, feilkodar og kvar køyretøyet står. Ikkje send sensitive personopplysningar.</p>
             <form id="kontaktskjema" action="https://formspree.io/f/xwvggenk" method="POST">
               <input type="hidden" name="_subject" value="Ny henvending frå adbluehjelp.no">
               <input type="text" name="_gotcha" style="display:none">

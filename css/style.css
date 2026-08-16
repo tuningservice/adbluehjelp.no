@@ -631,6 +631,25 @@ a:focus {
   text-decoration: underline;
 }
 
+.footer-credit {
+    flex-basis: 100%;
+    margin: 0.8rem 0 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #7d7d7d;
+}
+
+.footer-credit a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-credit a:hover,
+.footer-credit a:focus-visible {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
 /* Responsive breakpoints */
 @media (max-width: 992px) {
   .hero-content {

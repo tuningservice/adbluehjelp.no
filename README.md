@@ -22,7 +22,7 @@ Produksjonsvariablar:
 - hemmeleg variabel: `TURNSTILE_SECRET_KEY`
 - service binding: `MAIL_WORKER` → `vevsmia-mail-worker`
 
-Turnstile-widgeten skal tillate `adbluehjelp.no` og `adbluehjelp-no.pages.dev`. Byt `__TURNSTILE_SITE_KEY__` i `index.html` med den offentlege site key-en før ende-til-ende-test.
+Turnstile-widgeten er konfigurert for `adbluehjelp.no`, `www.adbluehjelp.no` og `adbluehjelp-no.pages.dev`. Den offentlege site key-en ligg i `index.html`; secret key skal berre finnast som hemmeleg Pages-variabel.
 
 ## Test
 

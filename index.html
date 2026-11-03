@@ -79,13 +79,14 @@
     </script>
   </head>
   <body>
+    <a class="skip-link" href="#innhald">Hopp til innhaldet</a>
     <header class="site-header">
       <div class="container header-content">
-        <a href="#hero" class="logo">
-          <strong>AdBluehjelp.no</strong>
-        </a>
-        <span class="tagline">Diagnose · SCR · NOx · Feilsøking</span>
-        <nav class="main-nav">
+        <div class="brand-block">
+          <a href="#hero" class="logo"><strong>AdBluehjelp.no</strong></a>
+          <a class="brand-attribution" href="https://tuningservicevest.no/">Ei teneste frå Tuningservice Vest</a>
+        </div>
+        <nav class="main-nav" aria-label="Hovudmeny">
           <ul>
             <li><a href="#problem">Problem</a></li>
             <li><a href="#faults">Tenester</a></li>
@@ -94,46 +95,27 @@
             <li><a href="#contact">Kontakt</a></li>
           </ul>
         </nav>
-        <div class="header-cta">
-          <a href="#contact" class="btn btn-primary">Få hjelp no</a>
-          <a href="tel:94809710" class="phone-link">948&nbsp;09&nbsp;710</a>
-        </div>
       </div>
     </header>
 
-    <main>
+    <main id="innhald">
       <!-- Hero Section -->
       <section id="hero" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-          <h1>AdBlue‑problem? Vi finn årsaka før du byter dyre delar.</h1>
-          <p class="subheadline">
-            Feilkode på AdBlue, SCR eller NOx‑system kan raskt føre til motorlampe,
-            redusert effekt, startsperre eller nedtelling til at bilen ikkje
-            startar.
-          </p>
-          <p>
-            Hos <strong>AdBluehjelp.no</strong> får du fagleg diagnose og praktisk
-            feilsøking på moderne dieselkøyretøy — anten det gjeld
-            personbil, varebil, bobil, lastebil, traktor, anleggsmaskin eller
-            anna utstyr med moderne dieselteknologi.
-          </p>
-          <p class="punchline">Mål først. Skru etterpå.</p>
-          <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">Få hjelp med AdBlue‑feil</a>
-            <a href="#contact" class="btn btn-secondary">Send feilkode / bilde av varsel</a>
+        <div class="container hero-layout">
+          <div class="hero-content">
+            <p class="eyebrow">Diagnose · SCR · NOx · Feilsøking</p>
+            <h1>AdBlue‑problem? Vi finn årsaka før du byter dyre delar.</h1>
+            <p class="subheadline">Feilkode på AdBlue, SCR eller NOx‑system kan raskt føre til motorlampe, redusert effekt, startsperre eller nedtelling til at bilen ikkje startar.</p>
+            <div class="hero-buttons">
+              <a href="#send-forespurnad" class="btn btn-primary">Få hjelp med AdBlue-varsel</a>
+              <a href="tel:94809710" class="btn btn-secondary" aria-label="Ring 948 09 710">Ring</a>
+            </div>
+            <p class="hero-detail">Hos <strong>AdBluehjelp.no</strong> får du fagleg diagnose og praktisk feilsøking på moderne dieselkøyretøy — anten det gjeld personbil, varebil, bobil, lastebil, traktor, anleggsmaskin eller anna utstyr med moderne dieselteknologi.</p>
+            <p class="punchline">Mål først. Skru etterpå.</p>
+            <p class="trust-line">Vestlandet · Mobil diagnose · Bil · Bobil · Varebil · Lastebil · Traktor · Maskin</p>
           </div>
-          <p class="trust-line">
-            Vestlandet · Mobil diagnose · Bil · Bobil · Varebil · Lastebil · Traktor · Maskin
-          </p>
+          <img src="img/hero-bilde.jpg" alt="Teknikar diagnostiserer ein bobil parkert ved ein fjord med opna panser" class="hero-img" width="1600" height="900" />
         </div>
-        <img
-          src="img/hero-bilde.jpg"
-          alt="Teknikar diagnostiserer ein bobil parkert ved ein fjord med opna panser"
-          class="hero-img"
-          width="1600"
-          height="900"
-        />
       </section>
 
       <!-- Problem / Intro Section -->
@@ -550,34 +532,31 @@
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="section contact">
-        <div class="container">
-          <h2>Har du AdBlue‑varsel no?</h2>
-          <p>
-            Send oss gjerne:
-          </p>
-          <ul class="contact-list">
-            <li>Registreringsnummer</li>
-            <li>Bil, maskinmodell og årsmodell</li>
-            <li>Bilete av feilmelding</li>
-            <li>Eventuelle feilkodar</li>
-            <li>Kva som allereie er forsøkt</li>
-            <li>Kvar køyretøyet står</li>
-          </ul>
-          <p>
-            Då kan vi raskare vurdere kva som er mest fornuftig neste steg.
-          </p>
-          <div class="contact-actions">
-            <a href="tel:94809710" class="btn btn-primary">Ring 948&nbsp;09&nbsp;710</a>
-            <a
-              href="mailto:vest@tuningservice.no"
-              class="btn btn-secondary"
-              >Send e‑post til vest@tuningservice.no</a
-            >
-          </div><div class="contact-form">
-            <h3>Eller send skjema</h3>
-            <p class="contact-form-help">Send gjerne registreringsnummer, modell, feilkodar og kvar køyretøyet står. Ikkje send sensitive personopplysningar.</p>
-
+      <section id="contact" class="section contact" aria-labelledby="kontaktoverskrift">
+        <div class="container contact-layout">
+          <div class="contact-intro">
+            <p class="eyebrow">Mobil diagnose på Vestlandet</p>
+            <h2 id="kontaktoverskrift">Har du AdBlue-varsel no?</h2>
+            <p>Skriv kva som står i displayet, og kvar køyretøyet står. Du treng ikkje kjenne feilkoden for å ta kontakt.</p>
+            <p>Send oss gjerne:</p>
+            <ul class="contact-list">
+              <li>Registreringsnummer, om du har det</li>
+              <li>Bil, maskinmodell og årsmodell</li>
+              <li>Bilete av feilmelding (valfritt)</li>
+              <li>Eventuelle feilkodar</li>
+              <li>Kva som allereie er forsøkt</li>
+              <li>Kvar køyretøyet står</li>
+            </ul>
+            <p>Då kan vi raskare vurdere kva som er mest fornuftig neste steg.</p>
+            <p>Bilete er valfritt. Du kan skildre varselet med ord og sende eit bilete etter at vi har fått kontakt.</p>
+            <div class="contact-actions">
+              <a href="tel:94809710" class="btn btn-primary" aria-label="Ring 948 09 710">Ring</a>
+              <a href="mailto:vest@tuningservice.no" class="btn btn-secondary">Send e-post</a>
+            </div>
+          </div>
+          <div class="contact-form" id="send-forespurnad">
+            <h3>Få hjelp med AdBlue-varsel</h3>
+            <p class="form-intro">Fortel kort kva som skjer. Vi tek kontakt for å avklare neste steg. Ikkje send sensitive personopplysningar.</p>
             <form id="kontaktskjema" action="/api/contact" method="POST" novalidate>
               <div class="contact-form-field">
                 <label for="navn">Namn <span class="required" aria-hidden="true">*</span></label>
@@ -585,8 +564,8 @@
               </div>
 
               <div class="contact-form-field">
-                <label for="bedrift">Bedrift <span class="optional">(valfritt)</span></label>
-                <input type="text" id="bedrift" name="company" autocomplete="organization" maxlength="100">
+                <label for="kontakt-bedrift">Bedrift <span class="optional">(valfritt)</span></label>
+                <input type="text" id="kontakt-bedrift" name="company" autocomplete="organization" maxlength="100">
               </div>
 
               <div class="contact-form-field">
@@ -599,18 +578,22 @@
                 <input type="tel" id="telefon" name="phone" autocomplete="tel" maxlength="30">
               </div>
 
-              <div class="contact-form-field">
-                <label for="melding">Kva gjeld det?</label>
-                <textarea id="melding" name="message" rows="5" maxlength="3000"></textarea>
+              <div class="contact-form-field"><label for="regnr">Registreringsnummer (valfritt)</label><input type="text" id="regnr" name="registration" maxlength="30" autocapitalize="characters" spellcheck="false"></div>
+<div class="contact-form-field">
+                <label for="melding">Kva står det i displayet?</label>
+<p id="melding-hjelp" class="field-help">Skriv gjerne varselet ordrett. Ta med modell, kvar du står og kva du har prøvd.</p>
+                <textarea id="melding" name="message" rows="6" maxlength="2600" aria-describedby="melding-hjelp bilete-hjelp"></textarea>
+<p id="bilete-hjelp" class="field-help">Du kan sende skjemaet utan reg.nr. og bilete.</p>
               </div>
 
               <p id="kontaktskjema-status" class="contact-form-status" role="status" aria-live="polite" hidden></p>
 
-              <div class="cf-turnstile" data-sitekey="0x4AAAAAAEhspAfEAACJuLHR"></div>
+              <div class="cf-turnstile" data-size="compact" data-sitekey="0x4AAAAAAEhspAfEAACJuLHR"></div>
 
-              <button type="submit" class="btn btn-primary" id="sendknapp">Send henvending</button>
+              <button type="submit" class="btn btn-primary" id="sendknapp">Send førespurnad</button>
             </form>
-            </div>
+            
+          </div>
         </div>
       </section>
     </main>
@@ -619,24 +602,23 @@
       <div class="container footer-content">
         <div class="footer-brand">
           <strong>AdBluehjelp.no</strong>
+          <a class="brand-attribution" href="https://tuningservicevest.no/">Ei teneste frå Tuningservice Vest</a>
           <p>Profesjonell diagnose og feilsøking av AdBlue, SCR og NOx‑system.</p>
         </div>
-        
-      <div class="footer-contact">
+        <div class="footer-contact">
           <p><strong>Telefon:</strong> <a href="tel:94809710">948&nbsp;09&nbsp;710</a></p>
           <p><strong>E‑post:</strong> <a href="mailto:vest@tuningservice.no">vest@tuningservice.no</a></p>
           <p><strong>Område:</strong> Vestlandet / etter avtale</p>
         </div>
-                <div class="footer-note">
-            <p>
-                AdBluehjelp.no tilbyr diagnose, feilsøking og lovlege løysingar.
-                Vi marknadsfører ikkje fjerning eller omgåing av utsleppssystem på
-                køyretøy som skal brukast på offentlege veg.
-            </p>
+        <div class="footer-note">
+          <p>
+            AdBluehjelp.no tilbyr diagnose, feilsøking og lovlege løysingar.
+            Vi marknadsfører ikkje fjerning eller omgåing av utsleppssystem på
+            køyretøy som skal brukast på offentleg veg.
+          </p>
         </div>
-
-        <p class="footer-credit">Nettside utvikla av <a href="https://vevsmia.no/">Vevsmia</a></p>
-    </div>
+      </div>
+    <p class="footer-credit">Nettside utvikla av <a href="https://vevsmia.no/">Vevsmia</a></p>
 </footer>
     <script>
       document.addEventListener('click', function (event) {
@@ -660,6 +642,7 @@
         }
       });
     </script>
-  <script src="js/contact-form.js"></script>
-  </body>
+  <script src="/js/contact-context.js" defer></script>
+<script src="/js/contact-form.js" defer></script>
+</body>
 </html>
